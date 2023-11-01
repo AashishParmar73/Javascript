@@ -15,3 +15,46 @@ Comparison operators are used in logical statements to determine equality or dif
 
 Given that x = 5, the table below explains the comparison operators: */
 
+// ==	equal to	x == 8	false	
+// ==	equal to	x == 5	true	
+// ===	equal value and type	x === "5"	false	
+// ===	equal value and type	x === 5	true	
+// !=	not equal	x != 8	true	
+// !==	not equal value or type	x !== "5"	true	
+// !==	not equal value or type	x !== 5	false	
+// >	greater than	x > 8	false	
+// <	less than	x < 8	true	
+// >=	greater or equal to	x >= 8	false	
+// <=	less or equal to	x <= 8	true
+
+var x = 5;
+console.log(x === "5");
+
+var x = 5;
+console.log(x != 5);
+
+var x = 5;
+console.log(x !== "5");
+
+var x = 5;
+console.log(x > 4);
+
+var x = 5;
+console.log(x < 6);
+
+var x = 5;
+console.log(x >= 5);
+
+var x = 5;
+console.log(x <= 5);
+
+// console.log( "2" > 1);
+// console.log("02"> 1 );
+
+console.log(null > 0);
+console.log(null == 0);
+console.log(null >= 0);
+
+
+
+
