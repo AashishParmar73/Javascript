@@ -60,7 +60,7 @@ const myn2 = num.splice(1, 3);
 console.log("C", num);
 console.log(myn2);
 
-// **************************************
+// ***********************************************//////////////////////////////////
 
 // The concat() method joins two or more strings.
 
