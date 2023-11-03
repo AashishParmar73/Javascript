@@ -59,3 +59,45 @@ console.log("B", num);
 const myn2 = num.splice(1, 3);
 console.log("C", num);
 console.log(myn2);
+
+// **************************************
+
+// The concat() method joins two or more strings.
+
+// The concat() method does not change the existing strings.
+
+// The concat() method returns a new string
+// concat do array ko add karta hai
+const marvel_heros = ["Thor", "Ironman", "spiderman"];
+const dc_heros = ["Superman", "flash", "batman"];
+
+const heros = marvel_heros.concat(dc_heros);
+console.log(heros);
+
+// Spread Operator
+// The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
+// spread matalbe kaach ka jaelas upper se neach geraana
+const newHero = [...marvel_heros, ...dc_heros];
+console.log(newHero);
+
+// The flat() method concatenates sub-array elements.
+
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
+
+const real_another_array = another_array.flat(Infinity);
+console.log(real_another_array);
+
+// The isArray() method returns true if an object is an array, otherwise false.
+console.log(Array.isArray("john"));
+
+// The Array.from() method returns an array from any object with a length property.
+// The Array.from() method returns an array from any iterable object.
+// console.log(Array.isArray("john"));
+console.log(Array.from("john"));
+console.log(Array.from({ name: "john" })); // interesting
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1, score2, score3));
